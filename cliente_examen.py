@@ -23,7 +23,6 @@ class Cliente():
 				sys.exit()
 			else:
 				with open("examenparcial_22124326.txt", "a") as f:
-					msg = input('Escriba el mensaje: ')
 					f.write("\n" + nick + ": " + msg)
 					msg = nick + ': ' + msg
 					self.enviar(msg)
@@ -41,5 +40,3 @@ class Cliente():
 		self.s.send(pickle.dumps(msg))
 
 arrancar = Cliente()
-
-		
