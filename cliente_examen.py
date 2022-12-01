@@ -53,7 +53,7 @@ class Cliente():
                     for k in range(len(A[0])): # n_fil_B o lo que es l mismo el n_col_A
                         MC[i*len(B[0]) + j] += A[i][k] * B[k][j]# Guarda resultado en MC[] de cada core
 
-        if __name__ == '__main__':
+        def multiplicarMatrices():
             A = [[random.randint(0,215) for i in range(6)] for j in range(22124326)] # Genero A[22124326][6]con num. aleatorios del 0 al 215, ver excel 
             B = [[random.randint(0,215) for i in range(200)] for j in range(6)] # Genero B[6][22124326]con num. aleatorios del 0 al 215, ver excel
             n_fil_A = 4326 # Obtengo num de filas de A 
