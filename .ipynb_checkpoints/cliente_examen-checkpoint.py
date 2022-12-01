@@ -25,7 +25,7 @@ class Cliente():
 					for j in range(n_col_B): # j para iterar sobre las columnas de B
 						for k in range(n_col_A): # k para iterar en C
 						C[i][j] += A[i][k] * B[k][j] # Aqui se hace la multiplicación y guardo en C.
-                return C
+					return C
 
 		def par_mult(A, B): # f() que prepara el reparto de trabajo para la mult. en paralelo
 			n_cores = mp.cpu_count() # Obtengo los cores de mi pc
