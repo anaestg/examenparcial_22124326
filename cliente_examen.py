@@ -77,11 +77,11 @@ class Cliente():
 				sys.exit()
 			else:
 				with open("examenparcial_22124326.txt", "a") as f:
-					f.write("\n Tiempo en SECUENCIAL" + finS)
-                    f.write("\n Tiempo en PARALELO" + finP)
-                    f.write("\n TAMAÑO DE A" + tamaño_a)
-                    f.write("\n TAMAÑO DE A" + tamaño_b)
-					msg = nick + ': ' + msg
+					f.write("\n Tiempo en SECUENCIAL" + finS-inicioS)
+                    f.write("\n Tiempo en PARALELO" + finP-inicioP)
+                    f.write("\n TAMAÑO DE A" + (n_fil_A * n_col_A))
+                    f.write("\n TAMAÑO DE B" + (n_fil_B * n_col_B))
+                    msg = '\n Tiempo en SECUENCIAL' + finS-inicioS + '\n Tiempo en PARALELO' + finP-inicioP + '\n TAMAÑO DE A' + (n_fil_A * n_col_A) + '\n TAMAÑO DE B' + (n_fil_B * n_col_B)
 					self.enviar(msg)
 				
 
