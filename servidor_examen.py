@@ -67,4 +67,6 @@ class Servidor():
 					c.send(msg)
 			except: self.clientes.remove(c)
 
+    
+
 arrancar = Servidor() 
