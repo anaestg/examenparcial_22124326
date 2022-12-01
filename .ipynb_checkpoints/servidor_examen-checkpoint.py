@@ -3,10 +3,6 @@ import threading
 import sys
 import pickle
 import os
-import random
-import multiprocessing as mp
-import time
-import math
 
 class Servidor():
 
@@ -66,5 +62,7 @@ class Servidor():
 				if c != cliente: 
 					c.send(msg)
 			except: self.clientes.remove(c)
+
+    
 
 arrancar = Servidor() 
